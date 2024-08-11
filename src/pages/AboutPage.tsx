@@ -4,7 +4,7 @@ import Hero from "../components/Hero"
 const AboutPage = () => {
   return (
     <>
-      <Hero title="About::Hero" />
+      <Hero title="About me" subtitle="Let's get acquainted!" />
       <div className="text-xl">About::content</div>
       {/* <SocialIcon url="https://linkedin.com/in/ventura-mendo" /> */}
     </>

@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='bg-cyan-600 p-4'>
+      <nav className='bg-white-100 p-4'>
         <div className='container mx-auto'>
           <ul className="flex justify-center space-x-4">
               <li><NavLink to='/' className={linkClass}>About</NavLink></li>

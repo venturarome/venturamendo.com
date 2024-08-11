@@ -3,7 +3,7 @@ import Hero from "../components/Hero"
 const ProjectsPage = () => {
   return (
     <>
-      <Hero title="Projects::Hero" />
+      <Hero title="My Projects" subtitle="Showcasing my software development journey"/>
       <div>Projects::content</div>
     </>
   )
