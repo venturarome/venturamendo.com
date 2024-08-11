@@ -3,23 +3,24 @@ import { NavLink } from "react-router-dom"
 const Navbar = () => {
 
   const linkClass = ({isActive} : {isActive: boolean}) : string => {
+    const classes = "text-white rounded-md px-3 py-2"
     return isActive
-      ? 'bg-stone-500'
-      : ''
+      ? classes + ' bg-cyan-950'
+      : classes + ' bg-cyan-700 hover:bg-cyan-900'
   }
 
   return (
     <>
-      <h2>Navbar</h2>
-      <div>
-        <ul>
-          <li><NavLink className={linkClass} to="/">Link to About</NavLink></li>
-          <li><NavLink className={linkClass} to="/projects">Link to Projects</NavLink></li>
-          <li><NavLink className={linkClass} to="/blog">Link to Blog</NavLink></li>
-        </ul>
-      </div>
+      <nav className='bg-cyan-600 p-4'>
+        <div className='container mx-auto'>
+          <ul className="flex justify-center space-x-4">
+              <li><NavLink to='/' className={linkClass}>About</NavLink></li>
+              <li><NavLink to='/projects' className={linkClass}>Projects</NavLink></li>
+              <li><NavLink to='/blog' className={linkClass}>Blog</NavLink></li>
+          </ul>
+        </div>
+      </nav>
     </>
-
   )
 }
 
